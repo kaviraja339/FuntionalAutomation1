@@ -7,7 +7,11 @@
         <methods>
           <include name="Create_New_Account"/>
           <include name="launchBrowser"/>
+          <include name="aftersuite"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
           <include name="teardown"/>
+          <include name="beforeSuite"/>
         </methods>
       </class> <!-- com.automationpractice.testcases.TC_001_Create_New_Account -->
     </classes>

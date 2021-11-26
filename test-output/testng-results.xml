@@ -1,24 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="8" total="13" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-17T16:55:58 IST" name="Suite" finished-at="2021-10-17T16:56:48 IST" duration-ms="49627">
+  <suite started-at="2021-11-26T09:02:14 IST" name="Suite" finished-at="2021-11-26T09:08:01 IST" duration-ms="346586">
     <groups>
     </groups>
-    <test started-at="2021-10-17T16:55:58 IST" name="Test" finished-at="2021-10-17T16:56:48 IST" duration-ms="49627">
-      <class name="com.automationpractice.testcases.TC_001_Create_New_Account">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.automationpractice.testcases.TC_001_Create_New_Account@1b2abca6]" started-at="2021-10-17T16:55:58 IST" name="launchBrowser" finished-at="2021-10-17T16:56:25 IST" duration-ms="26647" status="PASS">
+    <test started-at="2021-11-26T09:02:14 IST" name="Test" finished-at="2021-11-26T09:08:01 IST" duration-ms="346586">
+      <class name="com.automationpractice.testcases.TC_005_Searach_keyword">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.automationpractice.testcases.TC_005_Searach_keyword@35dab4eb]" started-at="2021-11-26T09:07:44 IST" name="beforeTest" finished-at="2021-11-26T09:07:44 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.automationpractice.testcases.TC_005_Searach_keyword@35dab4eb]" started-at="2021-11-26T09:07:44 IST" name="launchBrowser" finished-at="2021-11-26T09:07:44 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="Create_New_Account()[pri:0, instance:com.automationpractice.testcases.TC_001_Create_New_Account@1b2abca6]" started-at="2021-10-17T16:56:25 IST" name="Create_New_Account" description="Verify Create new Account" finished-at="2021-10-17T16:56:47 IST" duration-ms="21974" status="PASS">
+        <test-method signature="validate_TC_005_Searach_keyword()[pri:0, instance:com.automationpractice.testcases.TC_005_Searach_keyword@35dab4eb]" started-at="2021-11-26T09:07:44 IST" name="validate_TC_005_Searach_keyword" finished-at="2021-11-26T09:08:01 IST" duration-ms="16242" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Create_New_Account -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationpractice.testcases.TC_001_Create_New_Account@1b2abca6]" started-at="2021-10-17T16:56:47 IST" name="teardown" finished-at="2021-10-17T16:56:48 IST" duration-ms="876" status="PASS">
+        </test-method> <!-- validate_TC_005_Searach_keyword -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationpractice.testcases.TC_005_Searach_keyword@35dab4eb]" started-at="2021-11-26T09:08:01 IST" name="teardown" finished-at="2021-11-26T09:08:01 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.automationpractice.testcases.TC_005_Searach_keyword@35dab4eb]" started-at="2021-11-26T09:08:01 IST" name="afterClass" finished-at="2021-11-26T09:08:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.automationpractice.testcases.TC_005_Searach_keyword -->
+      <class name="com.automationpractice.testcases.TC_003_Login_with_invalid_credentials">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.automationpractice.testcases.TC_003_Login_with_invalid_credentials@d737b89]" started-at="2021-11-26T09:03:37 IST" name="beforeTest" finished-at="2021-11-26T09:03:37 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.automationpractice.testcases.TC_003_Login_with_invalid_credentials@d737b89]" started-at="2021-11-26T09:03:37 IST" name="launchBrowser" finished-at="2021-11-26T09:03:37 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="Validate_TC_003_Login_with_invalid_credentials()[pri:0, instance:com.automationpractice.testcases.TC_003_Login_with_invalid_credentials@d737b89]" started-at="2021-11-26T09:03:37 IST" name="Validate_TC_003_Login_with_invalid_credentials" finished-at="2021-11-26T09:05:39 IST" duration-ms="121747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_TC_003_Login_with_invalid_credentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationpractice.testcases.TC_003_Login_with_invalid_credentials@d737b89]" started-at="2021-11-26T09:05:39 IST" name="teardown" finished-at="2021-11-26T09:05:39 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.automationpractice.testcases.TC_003_Login_with_invalid_credentials@d737b89]" started-at="2021-11-26T09:05:39 IST" name="afterClass" finished-at="2021-11-26T09:05:39 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.automationpractice.testcases.TC_003_Login_with_invalid_credentials -->
+      <class name="com.automationpractice.testcases.TC_004_Logoff">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.automationpractice.testcases.TC_004_Logoff@8519cb4]" started-at="2021-11-26T09:05:39 IST" name="beforeTest" finished-at="2021-11-26T09:05:39 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.automationpractice.testcases.TC_004_Logoff@8519cb4]" started-at="2021-11-26T09:05:39 IST" name="launchBrowser" finished-at="2021-11-26T09:05:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="Validate_TC_004_Logoff()[pri:0, instance:com.automationpractice.testcases.TC_004_Logoff@8519cb4]" started-at="2021-11-26T09:05:39 IST" name="Validate_TC_004_Logoff" finished-at="2021-11-26T09:07:44 IST" duration-ms="125374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_TC_004_Logoff -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationpractice.testcases.TC_004_Logoff@8519cb4]" started-at="2021-11-26T09:07:44 IST" name="teardown" finished-at="2021-11-26T09:07:44 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.automationpractice.testcases.TC_004_Logoff@8519cb4]" started-at="2021-11-26T09:07:44 IST" name="afterClass" finished-at="2021-11-26T09:07:44 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.automationpractice.testcases.TC_004_Logoff -->
+      <class name="com.automationpractice.testcases.Tc_002_Login_With_valid_Credentials">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.automationpractice.testcases.Tc_002_Login_With_valid_Credentials@28261e8e]" started-at="2021-11-26T09:03:16 IST" name="beforeTest" finished-at="2021-11-26T09:03:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.automationpractice.testcases.Tc_002_Login_With_valid_Credentials@28261e8e]" started-at="2021-11-26T09:03:16 IST" name="launchBrowser" finished-at="2021-11-26T09:03:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="Verify_Login_With_Valid_Credentials()[pri:0, instance:com.automationpractice.testcases.Tc_002_Login_With_valid_Credentials@28261e8e]" started-at="2021-11-26T09:03:16 IST" name="Verify_Login_With_Valid_Credentials" finished-at="2021-11-26T09:03:37 IST" duration-ms="20385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Login_With_Valid_Credentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationpractice.testcases.Tc_002_Login_With_valid_Credentials@28261e8e]" started-at="2021-11-26T09:03:37 IST" name="teardown" finished-at="2021-11-26T09:03:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.automationpractice.testcases.Tc_002_Login_With_valid_Credentials@28261e8e]" started-at="2021-11-26T09:03:37 IST" name="afterClass" finished-at="2021-11-26T09:03:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.automationpractice.testcases.Tc_002_Login_With_valid_Credentials -->
+      <class name="com.automationpractice.testcases.TC_001_Create_New_Account">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.automationpractice.testcases.TC_001_Create_New_Account@cb0755b]" started-at="2021-11-26T09:02:14 IST" name="beforeSuite" finished-at="2021-11-26T09:02:14 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.automationpractice.testcases.TC_001_Create_New_Account@cb0755b]" started-at="2021-11-26T09:02:14 IST" name="beforeTest" finished-at="2021-11-26T09:02:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.automationpractice.testcases.TC_001_Create_New_Account@cb0755b]" started-at="2021-11-26T09:02:14 IST" name="launchBrowser" finished-at="2021-11-26T09:02:43 IST" duration-ms="28733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="Create_New_Account()[pri:0, instance:com.automationpractice.testcases.TC_001_Create_New_Account@cb0755b]" started-at="2021-11-26T09:02:43 IST" name="Create_New_Account" description="Verify Create new Account" finished-at="2021-11-26T09:03:16 IST" duration-ms="32860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Create_New_Account -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automationpractice.testcases.TC_001_Create_New_Account@cb0755b]" started-at="2021-11-26T09:03:16 IST" name="teardown" finished-at="2021-11-26T09:03:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.automationpractice.testcases.TC_001_Create_New_Account@cb0755b]" started-at="2021-11-26T09:03:16 IST" name="afterClass" finished-at="2021-11-26T09:03:16 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="aftersuite()[pri:0, instance:com.automationpractice.testcases.TC_001_Create_New_Account@cb0755b]" started-at="2021-11-26T09:08:01 IST" name="aftersuite" finished-at="2021-11-26T09:08:02 IST" duration-ms="1383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftersuite -->
       </class> <!-- com.automationpractice.testcases.TC_001_Create_New_Account -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

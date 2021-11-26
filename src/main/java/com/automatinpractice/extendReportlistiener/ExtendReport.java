@@ -23,9 +23,10 @@ public class ExtendReport {
 			SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH-mm-ss");
 			Date date = new Date(System.currentTimeMillis());
 			String ReportTime = formatter.format(date);
-			ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user+dir") + "/ExtentReport/ExtentReport"+ReportTime+".html");
+//			ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user+dir") + "/ExtentReport/ExtentReport"+ReportTime+".html");
+			ExtentSparkReporter spark = new ExtentSparkReporter("./src/test/resources/ExtentReport/ExtentReport"+ReportTime+".html");
 			spark.config().setTheme(Theme.DARK);
-			spark.config().setReportName("Automation Parctice");
+			spark.config().setReportName("Automation Practice");
 			spark.config().setDocumentTitle("Automation Testing");
 			extent.attachReporter(spark);
 		}

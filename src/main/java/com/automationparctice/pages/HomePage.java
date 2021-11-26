@@ -1,5 +1,7 @@
 package com.automationparctice.pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,10 +9,12 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import com.automatinpractice.extendReportlistiener.ExtendLogger;
+import com.automationpractice.commons.TestScriptHandler;
+import com.automationpractice.driver.Driver;
 import com.automationpractice.driver.DriverManager;
 import com.automationpractice.utilities.ReadConfig;
 
-public class HomePage {
+public class HomePage extends TestScriptHandler{
 	
 	ReadConfig config = new ReadConfig();
 	
@@ -43,33 +47,16 @@ public class HomePage {
 		PageFactory.initElements(DriverManager.getDriver(), this);
 	}
 	
+	
 	public HomePage click_Singin_Button() throws InterruptedException {
-		try {
-		signinButton.click();
-		Thread.sleep(4000);
-		ExtendLogger.pass("Click on [SignIn] Button Successfully");
-		}
-		catch(Exception e) {
-			e.printStackTrace();
-			ExtendLogger.fail("Something went wrong can't able to click on [SignIn] Button");
-		}
-		
+		click_custom(signinButton, " Sign In Button");
 		return this;
-		
 	}
 	
-	public HomePage enter_Email()
-	{
-		try {
-		email_Textbox.sendKeys(config.getEmail());
-		ExtendLogger.pass("Entered vales in [Email] textbox successfully");
-		}
-		catch(Exception e)
-		{
-			e.printStackTrace();
-			ExtendLogger.fail("Something went wrong can't able to entered the values in [Email] textbox");
-		}
+	public HomePage enter_Email() {
+		sendkeys_custom(email_Textbox, "Email Textbox", config.getEmail());
 		return this;
+		
 	}
 	
 	public HomePage click_Create_an_Account() throws InterruptedException {
@@ -87,6 +74,7 @@ public class HomePage {
 	
 	public HomePage click_Gender_Radiobutton() {
 		try {
+		Thread.sleep(5000);
 		genderRadioButton.click();
 		ExtendLogger.pass("Click on [Gender] RadioButton successfully");
 		}
@@ -240,6 +228,8 @@ public class HomePage {
 	}
 	
 	public HomePage click_Register_Button() {
+		
+		if(register_button.isDisplayed() && register_button.isEnabled()) {
 		try {
 		register_button.click();
 		ExtendLogger.pass("Click on [Register] Button successfully");
@@ -247,6 +237,11 @@ public class HomePage {
 		catch(Exception e) {
 			e.printStackTrace();
 			ExtendLogger.fail("Soemthing went wrong unale to click on [Register] Button");
+		}
+		}
+		else
+		{
+			ExtendLogger.fail("Register buttuon is not displayed and enabled");
 		}
 		return this;
 	}

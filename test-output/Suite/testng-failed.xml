@@ -10,9 +10,24 @@
         <methods>
           <include name="Create_New_Account"/>
           <include name="launchBrowser"/>
+          <include name="aftersuite"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
           <include name="teardown"/>
+          <include name="beforeSuite"/>
         </methods>
       </class> <!-- com.automationpractice.testcases.TC_001_Create_New_Account -->
+      <class name="com.automationpractice.testcases.Tc_002_Login_With_valid_Credentials">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="aftersuite"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="teardown"/>
+          <include name="Verify_Login_With_Valid_Credentials"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.automationpractice.testcases.Tc_002_Login_With_valid_Credentials -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

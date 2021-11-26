@@ -86,5 +86,17 @@ public class ReadConfig {
 		String mobile = pro.getProperty("mobile");
 		return mobile;
 	}
+	public String getusername() {
+		String username = pro.getProperty("userName");
+		return username;
+	}
+	public String getInvalidusername() {
+		String invalidusername = pro.getProperty("invalidUsername");
+		return invalidusername;
+	}
+	public String getInvalidPassword() {
+		String invalidpassword = pro.getProperty("invalidPassword");
+		return invalidpassword;
+	}
 
 }

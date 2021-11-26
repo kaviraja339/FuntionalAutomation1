@@ -2,15 +2,20 @@ package com.automationpractice.testcases;
 
 import org.testng.annotations.Test;
 
-import com.automatinpractice.extendReportlistiener.ExtendLogger;
+import com.automationparctice.pages.BasePage;
 import com.automationparctice.pages.HomePage;
 
 public class TC_001_Create_New_Account extends BaseTest{
 	
+//	public TC_001_Create_New_Account() {
+//		logger = BasePage.startReport(TC_001_Create_New_Account.class.getName());
+//	}
+
 	@Test(description = "Verify Create new Account")
 	public void Create_New_Account() throws InterruptedException
 	{
-		ExtendLogger.info("Verify Create a New Account in Automation practice.com");
+//		LogUtil.startTestCase("Create_New_Account");
+//		ExtendLogger.info("Verify Create a New Account in Automation practice.com");
 		HomePage home = new HomePage();
 		
 		home
@@ -32,6 +37,7 @@ public class TC_001_Create_New_Account extends BaseTest{
 		.click_Register_Button();
 		
 		Thread.sleep(5000);
+//		LogUtil.endTestCas("Create_New_Account");
 	}
 	
 

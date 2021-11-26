@@ -6,7 +6,12 @@
 	</listeners>
 	<test thread-count="5" name="Test">
     <classes>
-      <class name="com.automationpractice.testcases.TC_001_Create_New_Account"/>
+      <class name="com.automationpractice.testcases.TC_001_Create_New_Account"/> 
+       <class name="com.automationpractice.testcases.Tc_002_Login_With_valid_Credentials"/> 
+      <class name="com.automationpractice.testcases.TC_003_Login_with_invalid_credentials"/>
+       <class name="com.automationpractice.testcases.TC_004_Logoff"/> 
+         <class name="com.automationpractice.testcases.TC_005_Searach_keyword"/> 
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
